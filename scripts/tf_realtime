@@ -1,0 +1,121 @@
+#!/usr/bin/python
+
+import sys
+import optparse
+import trafikanten
+import trafikanten.util as util
+import copy
+import os
+
+FMT_XML = 1
+FMT_CSV = 2
+FMT_TAB = 3
+FMT_CUSTOM = 4
+FMT_HUMAN = 5
+
+
+def check_comma_list(option, opt, value):
+    """Type checker use by optparse. Pretty much lifted straight from the
+    optparse docs. We don't need the option or opt arguments but the get
+    passed from optparse internals so they need to be in the signature."""
+    return value.split(",")
+
+class CommaListOption(optparse.Option):
+    """Subclass that adds a comma separated list type to Option objects"""
+    TYPES = optparse.Option.TYPES + ("comma_list",)
+    TYPE_CHECKER = copy.copy(optparse.Option.TYPE_CHECKER)
+    TYPE_CHECKER["comma_list"] = check_comma_list
+
+
+def parse_options():
+    """Parse the command line and die if anything is bad. If everything is ok,
+    return a tuple (options, args[0]) where args[0] will contain the sid to
+    look for"""
+    usage = """%prog station_id [options]
+
+Retrieves realtime data for the station identified by station_id. By default
+the information is written to stdout in human readable form"""
+    parser = optparse.OptionParser(usage, option_class=CommaListOption)
+
+    parser.add_option("-f", "--file", dest="filename",
+                      help="write output to FILE", metavar="FILE")
+    parser.add_option("-o", "--overwrite", dest="overwrite",
+                      default=False, action="store_true",
+                      help="overwrite output file if it exists")
+    parser.add_option("-x", "--xml", dest="format", action="store_const",
+                      const=FMT_XML, help="write output in xml format")
+    parser.add_option("-c", "--csv", dest="format", action="store_const",
+                      const=FMT_CSV, help="write output in csv format")
+    parser.add_option("-t", "--tab", dest="format", action="store_const",
+                      const=FMT_TAB, help="write output as tab separated data")
+    parser.add_option("-s", "--separator",
+                      help="write output separatted by SEPARATOR",
+                      metavar="SEPARATOR", dest="separator",
+                      default=None)
+    parser.add_option("-n", "--names", action="store_true", dest="names",
+                      default=False, 
+                      help="include header with row names (only with custom separator)" )
+    parser.add_option("-i", "--include", dest="include", type="comma_list",
+                      help="Include only these routes. Multiple routes can be given, comma separated"
+                      )
+
+    options, args = parser.parse_args()
+
+    if len(args) != 1:
+        parser.error(
+            "Wrong number of arguments: Takes one argument, the station id")
+
+    if options.filename and not options.overwrite \
+            and os.path.isfile(options.filename):
+        parser.error("""File "%s" allready exists. Use -o to overwrite""" % options.filename)
+
+    if not options.format:
+        if options.separator:
+            options.format = FMT_CUSTOM
+        else:
+            options.format = FMT_HUMAN
+
+    return options, args[0]
+
+def main():
+    """Main application entry point"""
+    options, sid = parse_options()
+    if options.filename:
+        # we're not using codecs.open because then we need to keep track of
+        # if we're using a wrapped file or not. All output will be done
+        # in utf-8 explicitly when we call .write
+        outfile = open(options.filename, "wb")
+    else:
+        outfile = sys.stdout
+
+    res = trafikanten.get_realtime(sid)
+
+
+    if options.include and res:
+        res = [ e for e in res if e["id"] in options.include ]
+
+    if options.format == FMT_HUMAN:
+        if res == None:
+            data = u"Station does not exist"
+        else:
+            data = util.make_human_readable_realtime(res)
+
+    elif options.format == FMT_XML:
+        data = util.make_xml_realtime(res)
+    else:
+        if options.format == FMT_CSV:
+            sep = ";"
+        elif options.format == FMT_TAB:
+            sep = "\t"
+        elif options.format == FMT_CUSTOM:
+            sep = options.separator
+
+        data = util.make_delimited_realtime(res, separator=sep,
+                                            header=options.names)
+
+    data = data + u"\n"
+    enc = outfile.encoding or "utf-8"
+    outfile.write(data.encode(enc, "replace"))
+
+if __name__ == "__main__":
+    sys.exit(main())

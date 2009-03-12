@@ -1,0 +1,95 @@
+Overview
+--------
+
+This package provides an API for accessing departure data from the realtime
+system of the Oslo public transportation system. Its features are:
+
+- Find stations by name
+- Retrieve realtime data for stations. Falls back to schedule data when no
+  realtime data is available
+
+In addition to the API, two command line scripts are included: tf_realtime
+and tf_search.
+
+Contacts
+--------
+Author: runefh at gmail dot com
+Web site: http://bitbucket.org/runeh/pytrafikanten/
+
+License and Legal stuff
+-----------------------
+
+The library is distributed under the BSD license. See the LICENSE file
+The realtime data is distributed under the Attribution-Noncommercial-Share
+Alike 3.0 Unported ( http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en )
+
+More information at http://labs.trafikanten.no/lisens-for-bruk-av-trafikanten-data-til-ikke-kommersiell-bruk.php
+
+For inquries about commercial use, contact trafikanten. See:
+http://labs.trafikanten.no/om-labs/kontakt.php
+
+Also note that in the case of abuse, or excessive popularity, trafikanten may
+choose to disable the web service if it is disrupting their normal services.
+
+Example
+-------
+
+Import the module:
+
+    >>> import trafikanten
+
+Search for some stations:
+
+    >>> trafikanten.find_station("holmenk")
+    [{'xcoord': u'592869', 'ycoord': u'6648156', 'id': u'03012370', 'district': u'Oslo', 'name': u'Holmenkollen'}]
+
+Get realtime data for the found station:
+
+    >>> trafikanten.get_realtime('03012370') # doctest: +ELLIPSIS
+    [...]
+
+The same usign a caching class would go like this:
+
+    >>> import trafikanten
+    >>> tf = trafikanten.MemoryCacheTrafikanten()
+    >>> tf.find_station("holmenk")
+    [{'xcoord': u'592869', 'ycoord': u'6648156', 'id': u'03012370', 'district': u'Oslo', 'name': u'Holmenkollen'}]
+    >>> tf.get_realtime('03012370') # doctest: +ELLIPSIS
+    [...]
+
+Usage notes
+------------
+
+The package provdes module level functions for making requests to trafikanten
+without any caching. It's however strongly recommended that developers use
+one of the provided caching API classes, or implement their own caching.
+
+With regard to caching, the following rules of thumb should be followed:
+
+- Station search data can be cached for a long time, as that data rarely
+    changes. An hour is the default in the API, but more is fine.
+- Realtime data should be cached for no more than 20 seconds. In other words,
+    this caching will only be useful under load.
+
+The above rules of thumb are the defaults for the caching classes.
+
+Known issues
+------------
+
+- There is currently no way to map from a station id to a station name. If you
+  need this your only choice is to cache all station id/name pairs from
+  searches and hope whatever you're looking for has been searched for at
+  one point.
+- There is currently no way to determine if realtime data is available for a
+  certain stop. Getting an empty list as the result from a realtime query may
+  mean that there is no data available, or that there are noe upcomming
+  departures.
+- There is currently no way to get the "shortname" of a station, or to retrieve
+  realtime data based on shortnames
+
+To do
+-----
+
+- More tests
+- More docs
+- Better caching classes

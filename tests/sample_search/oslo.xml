@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<TravelResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StopMatches>
+    <StopMatch>
+      <ID>0</ID>
+      <fromid>00000099</fromid>
+      <StopName xsi:type="xsd:string">-</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>1</ID>
+      <fromid>01259143</fromid>
+      <StopName xsi:type="xsd:string">-</StopName>
+      <District xsi:type="xsd:string">Eidsberg</District>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>2</ID>
+      <fromid>02190393</fromid>
+      <StopName xsi:type="xsd:string">-</StopName>
+      <District xsi:type="xsd:string">Bærum</District>
+      <XCoordinate xsi:type="xsd:int">587158</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">6640387</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>3</ID>
+      <fromid>74005000</fromid>
+      <StopName xsi:type="xsd:string">-</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>4</ID>
+      <fromid>11469526</fromid>
+      <StopName xsi:type="xsd:string">- (Aksdal)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>5</ID>
+      <fromid>12013001</fromid>
+      <StopName xsi:type="xsd:string">- (Arna Terminal)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>6</ID>
+      <fromid>12013420</fromid>
+      <StopName xsi:type="xsd:string">- (Arna)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>7</ID>
+      <fromid>10271800</fromid>
+      <StopName xsi:type="xsd:string">- (Audnedal)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>8</ID>
+      <fromid>14215261</fromid>
+      <StopName xsi:type="xsd:string">- (Aurland)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>9</ID>
+      <fromid>03017732</fromid>
+      <StopName xsi:type="xsd:string">- (Bekkelagsvn mot syd midl nedl</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>10</ID>
+      <fromid>12011000</fromid>
+      <StopName xsi:type="xsd:string">- (Bergen busstasjon)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>11</ID>
+      <fromid>12013510</fromid>
+      <StopName xsi:type="xsd:string">- (Bergen)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>12</ID>
+      <fromid>16358889</fromid>
+      <StopName xsi:type="xsd:string">- (Berkåk)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>13</ID>
+      <fromid>16341100</fromid>
+      <StopName xsi:type="xsd:string">- (Berkåk)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>14</ID>
+      <fromid>12355250</fromid>
+      <StopName xsi:type="xsd:string">- (Bolstadøyri E16)</StopName>
+      <XCoordinate xsi:type="xsd:int">5957594</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">6063756</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>15</ID>
+      <fromid>12353340</fromid>
+      <StopName xsi:type="xsd:string">- (Bolstadøyri)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>16</ID>
+      <fromid>14225588</fromid>
+      <StopName xsi:type="xsd:string">- (Borgund stavkirke)</StopName>
+      <XCoordinate xsi:type="xsd:int">7813599</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">6104830</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>17</ID>
+      <fromid>14225630</fromid>
+      <StopName xsi:type="xsd:string">- (Borlaug)</StopName>
+      <XCoordinate xsi:type="xsd:int">7953913</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">6107353</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>18</ID>
+      <fromid>10211760</fromid>
+      <StopName xsi:type="xsd:string">- (Breland)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>19</ID>
+      <fromid>11212230</fromid>
+      <StopName xsi:type="xsd:string">- (Bryne)</StopName>
+      <District xsi:type="xsd:string">Time</District>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>20</ID>
+      <fromid>12353310</fromid>
+      <StopName xsi:type="xsd:string">- (Bulken)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>21</ID>
+      <fromid>12515050</fromid>
+      <StopName xsi:type="xsd:string">- (Dale Vaksdal)</StopName>
+      <XCoordinate xsi:type="xsd:int">5822122</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">6059034</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>22</ID>
+      <fromid>12513350</fromid>
+      <StopName xsi:type="xsd:string">- (Dale)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>23</ID>
+      <fromid>20000102</fromid>
+      <StopName xsi:type="xsd:string">- (Ed)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>24</ID>
+      <fromid>11012120</fromid>
+      <StopName xsi:type="xsd:string">- (Egersund)</StopName>
+      <District xsi:type="xsd:string">Eigersund</District>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>25</ID>
+      <fromid>12119001</fromid>
+      <StopName xsi:type="xsd:string">- (Etne)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>26</ID>
+      <fromid>12353330</fromid>
+      <StopName xsi:type="xsd:string">- (Evanger)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>27</ID>
+      <fromid>12355451</fromid>
+      <StopName xsi:type="xsd:string">- (Evanger)</StopName>
+      <XCoordinate xsi:type="xsd:int">6110214</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">6064763</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>28</ID>
+      <fromid>12333220</fromid>
+      <StopName xsi:type="xsd:string">- (Finse)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>29</ID>
+      <fromid>14215408</fromid>
+      <StopName xsi:type="xsd:string">- (Flåm st.)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>30</ID>
+      <fromid>14225438</fromid>
+      <StopName xsi:type="xsd:string">- (Fodnes)</StopName>
+      <XCoordinate xsi:type="xsd:int">7383801</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">6114865</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>31</ID>
+      <fromid>16409040</fromid>
+      <StopName xsi:type="xsd:string">- (Galåkrysset)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>32</ID>
+      <fromid>09111070</fromid>
+      <StopName xsi:type="xsd:string">- (Gjerstad)</StopName>
+      <District xsi:type="xsd:string">Gjerstad</District>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>33</ID>
+      <fromid>16409046</fromid>
+      <StopName xsi:type="xsd:string">- (Gjøsvika)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>34</ID>
+      <fromid>16400080</fromid>
+      <StopName xsi:type="xsd:string">- (Glåmos)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>35</ID>
+      <fromid>14215297</fromid>
+      <StopName xsi:type="xsd:string">- (Gudvangen E16)</StopName>
+      <XCoordinate xsi:type="xsd:int">6838705</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">6087768</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>36</ID>
+      <fromid>10041840</fromid>
+      <StopName xsi:type="xsd:string">- (Gyland)</StopName>
+      <District xsi:type="xsd:string">Flekkefjord</District>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>37</ID>
+      <fromid>74005640</fromid>
+      <StopName xsi:type="xsd:string">- (Gøteborg C)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>38</ID>
+      <fromid>12333230</fromid>
+      <StopName xsi:type="xsd:string">- (Hallingskeid)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>39</ID>
+      <fromid>16440140</fromid>
+      <StopName xsi:type="xsd:string">- (Haltdalen)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+    <StopMatch>
+      <ID>40</ID>
+      <fromid>16358887</fromid>
+      <StopName xsi:type="xsd:string">- (Hansen)</StopName>
+      <XCoordinate xsi:type="xsd:int">0</XCoordinate>
+      <YCoordinate xsi:type="xsd:int">0</YCoordinate>
+      <AirDistance xsi:type="xsd:int">0</AirDistance>
+    </StopMatch>
+  </StopMatches>
+  <TXMLErrors />
+</TravelResponse>
