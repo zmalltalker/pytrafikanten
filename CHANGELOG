@@ -1,0 +1,8 @@
+0.1
+
+    * Initial release
+
+0.2
+
+    * Added custom user-agent string
+    * Added lat/lon to station data (Patch from Marius Mathiesen)
